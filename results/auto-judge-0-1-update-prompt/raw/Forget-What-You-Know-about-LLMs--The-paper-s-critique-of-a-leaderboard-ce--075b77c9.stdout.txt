@@ -1,0 +1,2 @@
+judge_eval.judgment: True type: <class 'bool'>
+qa_failures: False type: <class 'bool'>
