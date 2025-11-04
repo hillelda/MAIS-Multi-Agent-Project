@@ -34,6 +34,10 @@ Key capabilities:
 - Self-assesses using the current summary only; checks truthfulness against the full article
 - Iteratively focuses on missing topics until done or the iteration limit is reached
 
+### Acknowledgements
+
+This was a collaborative project built with my colleague **@avrymi-asraf Avreymi Asraf **. I have created this independent repository from our original project to showcase my specific contributions and to continue development.
+
 ### 2) How does it work?
 
 Agents coordinated by `src/main.py`:
@@ -106,5 +110,6 @@ Troubleshooting:
 - File not found / empty: check `--file` path; for PDFs the loader prints detailed errors
 - Auth: ensure `GOOGLE_API_KEY` is set or present in `.env`
 - Rate limit/timeouts: lower `--limiter` or `--max_iterations`
+
 
 License: MIT (or project-appropriate).
