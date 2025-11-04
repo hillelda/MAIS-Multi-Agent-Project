@@ -36,7 +36,7 @@ Key capabilities:
 
 ### Acknowledgements
 
-This was a collaborative project built with my colleague **@avrymi-asraf Avreymi Asraf **. I have created this independent repository from our original project to showcase my specific contributions and to continue development.
+This was a collaborative project built by @avrymi-asraf Avreymi Asraf and Hillel Darshan @hillel.darshan.
 
 ### 2) How does it work?
 
@@ -113,3 +113,4 @@ Troubleshooting:
 
 
 License: MIT (or project-appropriate).
+
