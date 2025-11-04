@@ -36,7 +36,7 @@ Key capabilities:
 
 ### Acknowledgements
 
-This was a collaborative project built by @avrymi-asraf Avreymi Asraf and Hillel Darshan @hillel.darshan.
+This was a collaborative project built by Avreymi Asraf (@avrymi-asraf) and Hillel Darshan (@hillelda).
 
 ### 2) How does it work?
 
@@ -113,4 +113,5 @@ Troubleshooting:
 
 
 License: MIT (or project-appropriate).
+
 
