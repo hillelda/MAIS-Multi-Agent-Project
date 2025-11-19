@@ -12,10 +12,6 @@ import os
 import json
 from langchain_community.document_loaders import PyPDFLoader, UnstructuredPDFLoader
 
-# --- Add/replace in src/main.py ---
-
-from langchain_community.document_loaders import PyPDFLoader, UnstructuredPDFLoader
-
 FALLBACK_ANSWERS = {
     "not enough information in summary",
     "not enough information",
