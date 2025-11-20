@@ -164,7 +164,7 @@ def run_summarization_workflow(
 
         workflow_result["iterations"].append(iteration_data)
 
-        # NEW stop condition: require judge true AND no QAAgent failures
+        # stop condition: require judge true AND no QAAgent failures
         if judge_eval.judgment and not qa_failures:
             workflow_result["final_summary"] = current_summary
             workflow_result["total_iterations"] = iteration + 1
@@ -183,8 +183,7 @@ def run_summarization_workflow(
     return workflow_result
 
 
-
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser(description="Query-Focused Summarization Workflow")
     parser.add_argument('--file', type=str, required=True, help='Path to the article file (PDF or text)')
     parser.add_argument('--query', type=str, required=True, help='Query for summarization')
@@ -210,9 +209,9 @@ if __name__ == '__main__':
     result = run_summarization_workflow(
         query=args.query,
         article=article_content,
-    max_iterations=args.max_iterations,
-    requests_per_second=args.limiter if 'limiter' in args and args.limiter is not None else None,
-    )
+        max_iterations=args.max_iterations,
+        requests_per_second=args.limiter if 'limiter' in args and args.limiter is not None else None,
+        )
 
     # Always output JSON now
     if args.json_path:
@@ -221,3 +220,7 @@ if __name__ == '__main__':
             json.dump(result, f, indent=2, ensure_ascii=False)
     else:
         print(json.dumps(result, indent=2, ensure_ascii=False))
+
+
+if __name__ == '__main__':
+    main()
