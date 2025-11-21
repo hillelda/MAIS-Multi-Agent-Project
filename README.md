@@ -112,6 +112,6 @@ Troubleshooting:
 - Rate limit/timeouts: lower `--limiter` or `--max_iterations`
 
 
-License: MIT (or project-appropriate).
+License: MIT.
 
 
