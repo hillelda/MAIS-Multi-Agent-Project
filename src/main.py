@@ -6,7 +6,7 @@ from Agents import (
     JudgeEvaluationType,
     QuestionsOutputType,
     QAAgentEvaluationsOutputType,
-)
+    )
 import argparse
 import os
 import json
@@ -17,7 +17,7 @@ def run_summarization_workflow(
     article: str,
     max_iterations: int = 4,
     requests_per_second: float | None = None,
-):
+    ):
     """
     Run iterative summarization workflow with added QA failure gating.
     """

@@ -215,7 +215,7 @@ class Judge:
             "summary": RunnablePassthrough(),
         } | self.prompt | self.llm)
 
-    def run(self, article: str, summary: str, qa_pairs: List[Dict[str, str]]) -> dict | BaseModel:
+    def run(self, article: str, summary: str, qa_pairs: List[Dict[str, str]]) -> JudgeEvaluationType:
         return self.chain.invoke({
             "article": article,
             "summary": summary,
